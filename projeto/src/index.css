@@ -1,0 +1,79 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2a1d31;
+  background: linear-gradient(180deg, #fff7fb 0%, #f7ebff 45%, #fffaf5 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
+
+  --pink-50: #fff8f4;
+  --pink-100: #f8e9e2;
+  --pink-200: #efd4cc;
+  --pink-300: #ddaeb0;
+  --pink-500: #a44c67;
+  --pink-700: #843b50;
+  --purple-500: #976174;
+  --purple-700: #603840;
+  --gold-500: #d7a64e;
+  --brown-700: #4a2d2d;
+  --text: #43272b;
+  --muted: #806f70;
+  --bg: #fffaf5;
+  --card: rgba(255,255,255,0.78);
+  --border: rgba(124, 80, 160, 0.16);
+  --shadow: 0 18px 40px rgba(125, 64, 136, 0.14);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(ellipse at 10% 12%, rgba(244, 221, 212, 0.42), transparent 34%),
+    #f8f3ef;
+  color: var(--text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+main {
+  width: min(1200px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 28px 0 48px;
+}
+
+.page-shell {
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
